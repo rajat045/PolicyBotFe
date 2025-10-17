@@ -16,10 +16,10 @@
     "tailwindcss": "^3.4.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postinstall": "tailwindcss -i ./src/index.css -o ./src/tailwind-output.css --minify || true"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "postinstall": "tailwindcss -i ./src/index.css -o ./src/tailwind-output.css --minify || exit 0"
+},
   "browserslist": {
     "production": [
       ">0.2%",
